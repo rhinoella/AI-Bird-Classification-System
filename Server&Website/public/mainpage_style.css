@@ -1,0 +1,264 @@
+button { all: unset; }
+
+body {
+    background-color: #f3f3f2;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    width: 100%
+}
+
+header {
+    z-index: 1;
+    background-color: #f3f3f2;
+    box-shadow: 0 0 5px 2px #d9d9d8;
+    height: 50.4px;
+    margin: 0;
+    padding: 1.5rem 0.1rem 0rem 2.5rem;
+    position: sticky;
+    top: 0;
+}
+
+main > a {
+    color:rgb(118, 117, 117);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+main > a:hover {
+    text-decoration: underline;
+}
+
+main > a:visited {
+    color:rgb(112, 111, 111);
+    text-decoration: none;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.header h1, .header nav{
+    display: inline-block;
+    padding-bottom: 0.9rem;
+}
+
+.header > div {
+    display: inline-block;
+}
+
+.header > div > img {
+    display: inline-flex;
+    position: relative;
+    left: 1.6rem;
+    bottom: -0.31rem;
+}
+ 
+h1 {
+    font-size: x-large;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 2rem;
+    width: auto;
+}
+
+nav {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    float: right;
+    width: 50%;
+}
+
+nav > a {
+    color: rgb(92, 91, 91);
+    margin: 0.5rem 3.2rem 0.5rem 0;
+    padding-bottom: 0.9rem;
+    text-decoration: none;
+    font-weight: 510;
+}
+
+
+nav > a:hover {
+    color: black;
+} 
+
+main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+#mainPage_article {
+    border-right: 1px solid #dfdfdd;
+    padding-top: 1rem;
+    padding: 1rem 2rem 1rem 0rem;
+    width: 60%;
+}
+
+#mainPage_article > div {
+    font-size: large;
+    line-height: 1.7rem;
+    padding: 0 4rem 0 4rem;
+    text-align: justify;
+    width: auto;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+main > aside {
+    box-sizing: border-box;
+    margin-top: 4rem;
+    padding: 0rem 2rem 0 2rem;
+    text-align: center;
+    width: 30%;
+}
+
+aside > .cardThumbnail > p {
+    margin: 0;
+    padding-top: 1em;
+}
+
+aside > .cardThumbnail {
+    border: 1px solid #e1e1e1da;
+    padding-bottom: 1em;
+}
+
+h2 {
+    border-bottom: 2px solid #e7e7e7;
+    font-size: xx-large;
+    font-weight: 530;
+    margin-left: 0rem;
+    padding-top: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
+    width: auto;
+}
+
+#birdCaptures_article > h2 {
+    border-bottom: 2px solid #e7e7e7;
+    font-size: 3rem;
+    font-weight: 530;
+    margin: 3rem 0 2rem 0;
+    padding-top: 1rem;
+    padding: 1rem 2rem 1rem 4rem;
+    width: 1304px;
+}
+
+h3 {
+    font-size: x-large;
+    font-weight: 600;
+    margin: 0;
+    margin-right: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#birdCaptures_article {
+    margin: 1rem 1rem 3rem 2rem;
+    width: 1304px;
+}
+
+#birdCapturesGrid {
+    padding-left: 2em;
+    width: auto;
+}
+
+.birdCards {
+    display: inline-block;
+}
+
+.cardThumbnail {
+    z-index: 20;
+    border: 1px solid #e7e6e6da;
+    border-radius: 6px;
+    display: inline-block; /*HEHEHEHE */
+    margin: 1rem 1.2rem 1rem 0rem;
+    padding: 2em;
+    width: fit-content
+}
+
+.thumbnail {
+    z-index: 20;
+    border: 1px solid #e7e6e6da;
+    border-radius: 6px;
+    display: inline-block; /*HEHEHEHE */
+    margin: 1rem 1.2rem 1rem 0rem;
+    padding: 2em;
+    width: fit-content
+}
+
+.birdCards > .cardThumbnail:hover {
+    box-shadow: 0px 0px 10px 2px #e2e2e2da;
+}
+
+.birdCards > div > h3 {
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem 0;
+    width: fit-content;
+}
+
+.birdCards > div > p {
+    font-size: small;
+    margin: 0;
+}
+
+.cardModal > img {
+    background-color: #f3f3f2;
+    border: 1px solid #e2e2e1da;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 3rem 1.2rem 1rem 0rem;
+    padding: 2em;
+}
+
+.cardModal > div > p {
+    margin: 0;
+}
+
+.close {
+    color: #c6c6c6;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-right: -0.5rem;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: #adacac;
+}
+
+.cardHead > h2{
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+    padding: 0 0 0.5em 0;
+    width: inherit;
+}
+
+@keyframes animatetop {
+    from {opacity: 0; top: -500; }
+    to {top: 20%; opacity: 1}
+  }
+
+.cardModal {
+    display: none;
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+    background-color: #ececeb;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1000px 10000px #bbbbbb7b;
+    max-height: 60%;
+    margin: 0rem 1.2rem 3rem 0rem;
+    overflow: auto;
+    padding: 2em;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 80%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Ideas</title>
+    <link href="mainpage_style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="android-chrome-192x192.png">
+    <script src="brightideasscript.js" type="application/javascript" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <img src="android-chrome-192x192.png" alt="lightbulb" width="25" height="25">
+            </div>
+            <h1 id="blah">Bright Ideas Bird Table</h1>
+            <nav>
+                <a id="Home" href="home">Home</a>
+                <a id="BirdCaptures" href="birdcaptures">Bird Captures</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="mainPage_article">
+            <div>
+                <h2>About The Project</h2>
+                <p>
+                    The Bright Ideas Bird Table is a project for the Biomedical Problem Solving module at the University of Reading.
+                    We were tasked to create a bird table, according to our own specifications. 
+                    <br>
+                    <br>
+                    We decided to create
+                    a bird table which captured images and videos of birds using a raspberry pi and PIR motion detector. The images are sent to a
+                    Convolutional Neural Network (CNN) hosted on a VPS webserver, via a http POST request. The api processes the request, passes 
+                    the image to the classifier, and then sends the results back to the raspberry pi. The bird table will then play the bird's
+                    mating call according to its species, in order to observe its behaviour.
+
+                </p>
+                <br>
+                <h3>Classifier</h3>
+                <p>
+                    The classifier was developed in python using the Keras framework. It was built by transfer-learning the <a href="https://cloud.google.com/tpu/docs/inception-v3-advanced">Inception-V3</a> CNN,
+                    with weights from <a href="https://www.tensorflow.org/datasets/catalog/i_naturalist2017">iNaturalist 2017</a>. The CNN can classify 71 different bird species found on
+                    campus, using local bird species data gathered by Thomas Whitlock in the <a href="https://blogs.reading.ac.uk/whiteknightsbiodiversity/campus-species-lists/animals/birds/">Whiteknights Biodiversity project</a>.
+                    The dataset was gathered through a web scraper that collected around 150 images per class, with a total of 10000+ images in the whole dataset.
+                </p>
+                <br>
+                <h3>Website and API</h3>
+                <p>
+                    The website frontend is built from scratch using HTML, CSS and JavaScript. The API and website backend was built in TypeScript using the NodeJS framework. As we are dealing with images, we had to find a way to send images through
+                    a request body, which requires a string format. The solution we found was to convert the image into a base64 string, and send that to the API. 
+                    The API then sends the base64 encoded image to the classifier, which returns the species of the bird. The bird species information is then sent to the client 
+                    in a JSON response. All the bird images are automatically saved and uploaded to the website under <a href="birdcaptures.html">Bird Captures</a>.
+                </p>
+            </div>
+        </section>
+
+
