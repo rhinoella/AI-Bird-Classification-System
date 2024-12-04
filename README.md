@@ -1,6 +1,6 @@
 # CNN-Bird-Classification-System
 
-Full report: [https://docs.google.com/document/d/1ZWefC6GaF2BhPo_irSQ_Z1rPjaxFurQeuxbouVKHZ-E/edit?usp=sharing](link)
+Full report: https://docs.google.com/document/d/1ZWefC6GaF2BhPo_irSQ_Z1rPjaxFurQeuxbouVKHZ-E/edit?usp=sharing
 
 This is the code for my AI bird classification system, to classify birds in my local area. The Convolutional Neural Network (CNN) was built with transfer learning & fine-tuning of the InceptionV3 model with 
 the iNaturalist2017 weights. The CNN was hosted on a server with an API built with TypeScript that recieves images and sends them to the CNN model to be classified. The results are returned as a JSON response and uploaded to the 
