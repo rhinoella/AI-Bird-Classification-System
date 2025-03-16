@@ -1,5 +1,7 @@
 # CNN-Bird-Classification-System
 
+Made in 2022
+
 Full report: https://docs.google.com/document/d/1ZWefC6GaF2BhPo_irSQ_Z1rPjaxFurQeuxbouVKHZ-E/edit?usp=sharing
 
 This is the code for my AI bird classification system, to classify birds in my local area. The Convolutional Neural Network (CNN) was built with transfer learning & fine-tuning of the InceptionV3 model with 
